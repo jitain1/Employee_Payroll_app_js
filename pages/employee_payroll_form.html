@@ -5,12 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" />
-      	<link rel="stylesheet" href="../css/styles-payroll-form.css" />
+    	<link rel="stylesheet" href="../css/styles-payroll-form.css" />
 		<title>Employee payroll form</title>
-		<script defer src="../js/payroll_form.js"></script>
-		<script defer src="../js/employee_payroll_data.js"></script>
+		<script src="../js/employee_payroll_data.js"></script>
+		<script src="../js/payroll_form.js"></script>
 		<script src="../js/utility_script.js"></script>
 		<script src="../js/site_properties_script.js"></script>
+		<script src="../js/employee_home_script.js"></script>
+		
 	</head>
 
 	<body>
@@ -25,7 +27,7 @@
 		</header>
 
 		<div class="form-content">
-			<form class="form" action="#" onsubmit="save()" onreset="resetForm()">
+			<form class="form" action="#" onsubmit="save(event)" onreset="resetForm()">
 				<div class="form-head">Employee Payroll form</div>
 					<div class="row-content">
 						<label class="label text" for="name">Name</label>
@@ -67,7 +69,7 @@
 					</div>
 
 					<div class="row-content">
-						<label class="label text" for="department" >Department</label>
+						<label class="label text" for="department">Department</label>
 						<div>
 							<label>
 								<input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
